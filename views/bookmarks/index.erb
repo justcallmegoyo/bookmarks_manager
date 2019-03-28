@@ -1,7 +1,9 @@
 <html>
-<%= @bookmarks %>
+<% @bookmarks.each do |bookmark| %>
+<%= bookmark.title %><br/>
+<%end%>
 
-<form action="/bookmarks/add" method="post"> 
+<form action="/bookmarks/add" method="post">
   Title: <input type="text" name="title">
   url: <input type="text" name="url">
   <input type="submit" value="add">
