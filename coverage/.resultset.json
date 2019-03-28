@@ -30,6 +30,18 @@
         1,
         null,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/gregpaul/Desktop/WORKSPACE/Makers/bookmarks_manager/spec/features/add_bookmark_spec.rb": [
@@ -45,6 +57,22 @@
         1,
         1,
         1,
+        1,
+        null,
+        null
+      ],
+      "/Users/gregpaul/Desktop/WORKSPACE/Makers/bookmarks_manager/spec/features/delete_bookmark_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
         1,
         null,
         null
@@ -81,6 +109,6 @@
         null
       ]
     },
-    "timestamp": 1553785641
+    "timestamp": 1553791530
   }
 }

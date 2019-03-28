@@ -26,4 +26,16 @@ describe Bookmark do
       expect(bookmarks[0]).to have_attributes(:title => "Test Bookmark")
     end
   end
+
+  describe "delete" do
+    it "deletes a bookmark from the list" do
+      bookmark_1 = Bookmark.create(url: 'http://www.testbookmark.com', title: 'Test Bookmark')
+      bookmark_2 = Bookmark.create(url: 'http://www.johnlewis.co.uk', title: 'John Lewis')
+
+      expect(Bookmark.all[0]).to have_attributes(:url => 'http://www.testbookmark.com')
+      Bookmark.delete(bookmark_1.id)
+      
+      expect(Bookmark.all[0]).not_to have_attributes(:url => 'http://www.testbookmark.com')
+  end
+end
 end
